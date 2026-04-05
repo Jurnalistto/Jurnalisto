@@ -42,7 +42,7 @@ export default function LandingPage() {
     });
   const featured = getFeaturedBerita();
   const allLatest = getLatestBerita();
-  const kategoris = [...getKategoriList(), 'Inspirasi'];
+  const kategoris = [...getKategoriList(), 'Inspirasi', 'Teknologi'];
 
   const getFilteredNews = () => {
     let result = allLatest;
@@ -109,7 +109,7 @@ export default function LandingPage() {
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
-              className="h-10 sm:h-14 md:h-16 w-auto"
+              className="h-14 sm:h-18 md:h-22 w-auto"
             />
             <div className="flex items-center gap-2">
               <form onSubmit={handleSearch}>
