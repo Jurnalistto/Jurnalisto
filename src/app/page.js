@@ -137,39 +137,12 @@ export default function LandingPage() {
             />
           </form>
         </div>
-        <div className="max-w-7xl mx-auto px-4 py-2 bg-black/20">
-          <div className="flex flex-wrap gap-1">
-            <button 
-              onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }} 
-              className={`px-3 py-1.5 text-xs font-medium rounded transition-colors ${
-                !selectedDaerah && !selectedKategori 
-                  ? 'bg-blue-500 text-white' 
-                  : 'bg-white/10 text-white hover:bg-white/20'
-              }`}
-            >
-              Beranda
-            </button>
-            {kategoris.map((kat) => (
-              <button 
-                key={kat} 
-                onClick={() => handleKategoriClick(kat)} 
-                className={`px-3 py-1.5 text-xs font-bold rounded transition-colors ${
-                  selectedKategori === kat 
-                    ? 'bg-blue-500 text-white' 
-                    : 'bg-white/10 text-white hover:bg-white/20'
-                }`}
-              >
-                {kat}
-              </button>
-            ))}
-          </div>
-        </div>
-<div className="max-w-7xl mx-auto px-4 py-2">
+        <div className="max-w-7xl mx-auto px-4 py-2">
           <div className="marquee-container">
             <div className="marquee-content">
               {[...daerahList, ...daerahList].map((daerah, index) => (
                 <button
-                  key={`${daerah.id}-${index}`}
+                  key={`daerah-${daerah.id}-${index}`}
                   onClick={() => handleDaerahClick(daerah)}
                   className={`mx-1 px-3 py-1.5 flex-shrink-0 rounded text-xs font-medium transition-all ${
                     selectedDaerah?.id === daerah.id
@@ -178,6 +151,35 @@ export default function LandingPage() {
                   }`}
                 >
                   {getLabel(daerah.nama).display}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 py-2">
+          <div className="marquee-container">
+            <div className="marquee-content">
+              <button 
+                onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }} 
+                className={`mx-1 px-3 py-1.5 flex-shrink-0 rounded text-xs font-medium transition-all ${
+                  !selectedDaerah && !selectedKategori 
+                    ? 'bg-blue-500 text-white shadow-md' 
+                    : 'bg-white/10 text-white hover:bg-white/20'
+                }`}
+              >
+                Beranda
+              </button>
+              {[...kategoris, ...kategoris].map((kat, index) => (
+                <button 
+                  key={`kategori-${kat}-${index}`}
+                  onClick={() => handleKategoriClick(kat)} 
+                  className={`mx-1 px-3 py-1.5 flex-shrink-0 rounded text-xs font-medium transition-all ${
+                    selectedKategori === kat 
+                      ? 'bg-blue-500 text-white shadow-md' 
+                      : 'bg-white/10 text-white hover:bg-white/20'
+                  }`}
+                >
+                  {kat}
                 </button>
               ))}
             </div>
