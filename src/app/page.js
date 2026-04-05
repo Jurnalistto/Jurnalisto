@@ -176,13 +176,13 @@ export default function LandingPage() {
                 <button 
                   key={`kategori-${kat}-${index}`}
                   onClick={() => handleKategoriClick(kat)} 
-                  className={`mx-1 px-3 py-1.5 flex-shrink-0 rounded text-xs font-medium transition-all ${
+                  className={`mx-1 px-3 py-1.5 flex-shrink-0 rounded text-xs font-bold transition-all ${
                     selectedKategori === kat 
                       ? 'bg-blue-500 text-white shadow-md' 
                       : 'bg-white text-blue-600 hover:bg-blue-50'
                   }`}
                 >
-                  {kat.toUpperCase()}
+                  {kat}
                 </button>
               ))}
             </div>
