@@ -104,12 +104,12 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="sticky top-0 z-20 shadow-md border-b border-gray-200 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900">
-        <div className="max-w-7xl mx-auto px-4 pb-1">
+        <div className="max-w-7xl mx-auto px-4 py-1">
           <div className="flex items-center justify-between">
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
-              className="h-12 sm:h-16 md:h-20 w-auto"
+              className="h-10 sm:h-14 md:h-16 w-auto"
             />
             <div className="flex items-center gap-2">
               <form onSubmit={handleSearch}>
