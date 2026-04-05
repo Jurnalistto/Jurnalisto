@@ -114,16 +114,7 @@
   pointer-events: none;
 }
 
-/* Marquee scrolling animation */
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
+/* Marquee scrolling animation - seamless loop */
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
@@ -131,28 +122,30 @@
 
 .marquee-content {
   display: inline-flex;
-  animation: marquee 60s linear infinite;
+  animation: marquee 80s linear infinite;
 }
 
 .marquee-content-fast {
   display: inline-flex;
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
 }
 
 .marquee-smooth {
   display: inline-flex;
-  animation: marquee-smooth 40s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 
-@keyframes marquee-smooth {
+@keyframes marquee {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
-.marquee-content:hover {
+.marquee-content:hover,
+.marquee-content-fast:hover,
+.marquee-smooth:hover {
   animation-play-state: paused;
 }
