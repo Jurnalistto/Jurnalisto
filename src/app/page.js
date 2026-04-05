@@ -134,7 +134,7 @@ export default function LandingPage() {
                 <button
                   key={`daerah-${daerah.id}-${index}`}
                   onClick={() => handleDaerahClick(daerah)}
-                  className={`mx-1 px-4 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
+                  className={`mx-0.5 px-3 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
                     selectedDaerah?.id === daerah.id
                       ? 'bg-blue-500 text-white shadow-md'
                       : 'bg-white/10 text-white hover:bg-white/20'
@@ -145,7 +145,7 @@ export default function LandingPage() {
               ))}
               <button
                 onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }}
-                className={`mx-1 px-4 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
+                className={`mx-0.5 px-3 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
                   !selectedDaerah && !selectedKategori
                     ? 'bg-blue-500 text-white shadow-md'
                     : 'bg-white/10 text-white hover:bg-white/20'
