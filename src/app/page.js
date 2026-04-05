@@ -125,7 +125,7 @@ export default function LandingPage() {
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
-              className="h-12 sm:h-14 md:h-16 w-auto"
+              className="h-16 sm:h-20 md:h-24 w-auto"
             />
           </div>
         </div>
