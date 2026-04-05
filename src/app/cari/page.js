@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { getLatestBerita } from '../../../data/berita';
-import { getDaerahData } from '../../../lib/daerah';
+import { getLatestBerita } from '../../data/berita';
+import { getDaerahData } from '../../lib/daerah';
 
 export default function SearchPage({ searchParams }) {
   const query = searchParams.q || '';
