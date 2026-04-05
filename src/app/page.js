@@ -104,26 +104,26 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="sticky top-0 z-20 shadow-md border-b border-gray-200 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900">
-        <div className="max-w-7xl mx-auto px-4 py-3">
-          <div className="flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 pt-4 pb-2">
+          <div className="flex items-center justify-center mb-3">
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
               className="h-16 sm:h-20 md:h-24 w-auto"
             />
-            <div className="flex flex-col items-end gap-1">
-              <form onSubmit={handleSearch}>
-                <input
-                  type="text"
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  placeholder="Cari..."
-                  className="w-32 sm:w-40 px-2 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
-                />
-              </form>
-              <div className="text-[10px] sm:text-xs text-white font-medium bg-white/10 px-2 py-1 rounded border border-white/20">
-                {currentDate}
-              </div>
+          </div>
+          <div className="flex justify-end items-center gap-2">
+            <form onSubmit={handleSearch}>
+              <input
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Cari..."
+                className="w-32 sm:w-40 px-2 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
+              />
+            </form>
+            <div className="text-[10px] sm:text-xs text-white font-medium bg-white/10 px-2 py-1 rounded border border-white/20">
+              {currentDate}
             </div>
           </div>
         </div>
