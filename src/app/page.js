@@ -125,11 +125,11 @@ export default function LandingPage() {
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
-              className="h-8 sm:h-10 md:h-12 w-auto"
+              className="h-12 sm:h-14 md:h-16 w-auto"
             />
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 py-1">
+        <div className="max-w-7xl mx-auto px-4 pt-1 pb-0">
           <div className="marquee-container">
             <div className="marquee-content">
               <button
@@ -158,7 +158,7 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto px-4 py-2">
+        <div className="max-w-7xl mx-auto px-4 pt-1 pb-0">
           <div className="marquee-container">
             <div className="marquee-content-fast">
               <button 
