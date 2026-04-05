@@ -104,9 +104,8 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="sticky top-0 z-20 shadow-md border-b border-gray-200 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900">
-        <div className="max-w-7xl mx-auto px-4 py-2">
+        <div className="max-w-7xl mx-auto px-4 pb-1">
           <div className="flex items-center justify-between">
-            <div className="w-32 sm:w-40"></div>
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
