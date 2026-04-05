@@ -130,7 +130,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 py-1">
           <div className="marquee-container">
             <div className="marquee-content">
-              {[...daerahList, ...daerahList].map((daerah, index) => (
+              {daerahList.map((daerah, index) => (
                 <button
                   key={`daerah-${daerah.id}-${index}`}
                   onClick={() => handleDaerahClick(daerah)}
@@ -153,6 +153,19 @@ export default function LandingPage() {
               >
                 BERANDA UTAMA
               </button>
+              {[...daerahList, ...daerahList].map((daerah, index) => (
+                <button
+                  key={`daerah-${daerah.id}-${index}`}
+                  onClick={() => handleDaerahClick(daerah)}
+                  className={`mx-0.5 px-3 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
+                    selectedDaerah?.id === daerah.id
+                      ? 'bg-blue-500 text-white shadow-md'
+                      : 'bg-white/10 text-white hover:bg-white/20'
+                  }`}
+                >
+                  {getLabel(daerah.nama).display.toUpperCase()}
+                </button>
+              ))}
             </div>
           </div>
         </div>
