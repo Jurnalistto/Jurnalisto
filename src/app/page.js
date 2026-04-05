@@ -1,0 +1,329 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import { getAllDaerah } from '../lib/daerah';
+import { getLatestBerita, getFeaturedBerita, getKategoriList, getBeritaByKategori } from '../data/berita';
+
+export default function LandingPage() {
+  const [search, setSearch] = useState('');
+  const [selectedDaerah, setSelectedDaerah] = useState(null);
+  const [selectedKategori, setSelectedKategori] = useState(null);
+  const [currentDate, setCurrentDate] = useState('');
+  
+  useEffect(() => {
+    const updateDate = () => {
+      const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+      const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+      const now = new Date();
+      const dayName = days[now.getDay()];
+      const day = String(now.getDate()).padStart(2, '0');
+      const month = months[now.getMonth()];
+      const year = now.getFullYear();
+      setCurrentDate(`${dayName}, ${day} ${month} ${year}`);
+    };
+    
+    updateDate();
+    const interval = setInterval(updateDate, 1000);
+    return () => clearInterval(interval);
+  }, []);
+  const router = useRouter();
+  const daerahListRaw = getAllDaerah();
+  const kupangKota = daerahListRaw.find(d => d.id === 'kupang-kota');
+  const kupangKab = daerahListRaw.find(d => d.id === 'kupang-kab');
+  const daerahList = daerahListRaw
+    .filter(d => d.id !== 'kupang-kota' && d.id !== 'kupang-kab')
+    .sort((a, b) => a.nama.localeCompare(b.nama))
+    .flatMap(d => {
+      if (d.id === 'lembata') return [kupangKab, kupangKota, d];
+      return [d];
+    });
+  const featured = getFeaturedBerita();
+  const allLatest = getLatestBerita();
+  const kategoris = getKategoriList();
+
+  const getFilteredNews = () => {
+    let result = allLatest;
+    
+    if (selectedDaerah) {
+      result = result.filter(b => b.daerah === selectedDaerah.nama);
+    }
+    
+    if (selectedKategori) {
+      result = result.filter(b => b.kategori === selectedKategori);
+    }
+    
+    return result;
+  };
+
+  const filteredNews = getFilteredNews();
+  const displayNews = filteredNews.slice(0, 4);
+  const latestNews = filteredNews;
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (search.trim()) {
+      router.push(`/cari?q=${encodeURIComponent(search)}`);
+    }
+  };
+
+  const handleDaerahClick = (daerah) => {
+    if (selectedDaerah?.id === daerah.id) {
+      setSelectedDaerah(null);
+    } else {
+      setSelectedDaerah(daerah);
+    }
+  };
+
+  const handleKategoriClick = (kat) => {
+    if (selectedKategori === kat) {
+      setSelectedKategori(null);
+    } else {
+      setSelectedKategori(kat);
+    }
+  };
+
+  const getLabel = (nama) => {
+    if (nama === 'Kota Kupang') {
+      return { display: 'Ibukota\nKupang' };
+    }
+    if (nama === 'Kabupaten Kupang') {
+      return { display: 'Kupang' };
+    }
+    const parts = nama.split(' ');
+    const prefix = parts[0];
+    const name = parts.slice(1).join(' ');
+    return { display: name || prefix };
+  };
+
+  const row1 = daerahList.slice(0, 11);
+  const row2 = daerahList.slice(11, 22);
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <div className="sticky top-0 z-20 shadow-md border-b border-gray-200 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900">
+        <div className="max-w-7xl mx-auto px-4 pt-4">
+          <div className="flex items-center justify-between mb-2">
+            <div className="w-48"></div>
+            <div className="flex justify-center">
+              <img 
+                src="/JurnalistoX.png" 
+                alt="Jurnalisto" 
+                className="h-16 md:h-20 w-auto"
+              />
+            </div>
+            <form onSubmit={handleSearch} className="flex justify-end w-48">
+              <div className="flex items-center bg-white/10 backdrop-blur rounded border border-white/20 shadow-sm overflow-hidden w-full max-w-xs">
+                <input
+                  type="text"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Cari berita..."
+                  className="flex-grow px-3 py-1.5 text-xs text-white placeholder-gray-300 focus:outline-none bg-transparent"
+                />
+                <button
+                  type="submit"
+                  className="px-3 py-1.5 bg-white/10 text-white text-xs font-medium border-l border-white/20 hover:bg-white/20 transition-colors"
+                >
+                  🔍
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 py-2">
+          <div className="flex flex-wrap justify-between gap-1">
+            <button 
+              onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }} 
+              className={`px-2 py-1 text-xs font-medium rounded transition-colors ${
+                !selectedDaerah && !selectedKategori 
+                  ? 'bg-blue-500 text-white' 
+                  : 'bg-white/10 text-white hover:bg-white/20 border border-white/10'
+              }`}
+            >
+              Beranda
+            </button>
+            <div className="flex flex-wrap gap-1">
+              {kategoris.map((kat) => (
+                <button 
+                  key={kat} 
+                  onClick={() => handleKategoriClick(kat)} 
+                  className={`px-2 py-1 text-[10px] font-bold rounded transition-colors ${
+                    selectedKategori === kat 
+                      ? 'bg-blue-500 text-white border-blue-500' 
+                      : 'bg-white text-blue-600 hover:bg-blue-50 border border-blue-300'
+                  }`}
+                >
+                  {kat}
+                </button>
+              ))}
+            </div>
+            <span className="text-xs text-white font-medium bg-white/10 px-3 py-1 rounded border border-white/20">
+              {currentDate}
+            </span>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 py-2">
+          <div className="bg-white/5 py-1 px-0 glow-container">
+            <div className="marquee-container">
+              <div className="marquee-content">
+                {[...daerahList, ...daerahList].map((daerah, index) => (
+                  <button
+                    key={`${daerah.id}-${index}`}
+                    onClick={() => handleDaerahClick(daerah)}
+                    className={`mx-0.5 px-2 py-1 rounded-xl text-center transition-all border shadow-md hover:shadow-xl flex-shrink-0 ${
+                      selectedDaerah?.id === daerah.id 
+                        ? 'bg-blue-500 text-white border-blue-400 shadow-blue-300' 
+                        : 'bg-white/10 text-white border-white/20 hover:bg-white/20 hover:border-white/40'
+                    }`}
+                  >
+                    <span className="font-semibold block text-xs leading-tight whitespace-nowrap">{getLabel(daerah.nama).display}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-slate-100 max-w-7xl mx-auto p-4">
+        {(selectedDaerah || selectedKategori) && (
+          <div className="mb-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+            <p className="text-center text-sm text-blue-700">
+              Menampilkan: <span className="font-bold">
+                {selectedDaerah?.nama && selectedKategori 
+                  ? `${selectedKategori} - ${selectedDaerah.nama}` 
+                  : (selectedDaerah?.nama || selectedKategori)}
+              </span>
+            </p>
+          </div>
+        )}
+
+        {displayNews.length > 0 ? (
+          <>
+            {displayNews[0] && (
+              <article className="mb-4 group">
+                <Link href={`/berita/${displayNews[0].slug}`} className="block">
+                  <div className="relative h-64 md:h-80 rounded-xl overflow-hidden mb-3">
+                    <Image
+                      src={displayNews[0].gambar}
+                      alt={displayNews[0].title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 bg-red-600 text-white text-xs font-bold rounded-full">
+                        HEADLINE
+                      </span>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 p-5">
+                      <span className="px-2 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium rounded mb-2 inline-block">
+                        {displayNews[0].kategori}
+                      </span>
+                      <h2 className="font-serif text-xl md:text-2xl font-bold text-white mb-2 group-hover:text-gray-200 transition-colors">
+                        {displayNews[0].title}
+                      </h2>
+                      <p className="text-gray-200 text-sm line-clamp-2 mb-2">
+                        {displayNews[0].excerpt}
+                      </p>
+                      <div className="flex items-center text-gray-300 text-xs gap-2">
+                        <span>{displayNews[0].penulis}</span>
+                        <span>•</span>
+                        <span>{displayNews[0].tanggal}</span>
+                        {displayNews[0].daerah && <><span>•</span><span>{displayNews[0].daerah}</span></>}
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              </article>
+            )}
+
+            <div className="grid grid-cols-3 gap-4 mb-6">
+              {displayNews.slice(1, 4).map((berita) => (
+                <article key={berita.id} className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
+                  <Link href={`/berita/${berita.slug}`} className="block">
+                    <div className="relative h-36">
+                      <Image
+                        src={berita.gambar}
+                        alt={berita.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-2">
+                        <span className="px-2 py-0.5 bg-blue-600 text-white text-[9px] font-medium rounded">
+                          {berita.kategori}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="p-2">
+                      <h3 className="font-serif text-xs font-bold text-gray-900 line-clamp-2 group-hover:text-blue-600 transition-colors">
+                        {berita.title}
+                      </h3>
+                      <p className="text-[10px] text-gray-400 mt-1">
+                        {berita.penulis} • {berita.tanggal}
+                      </p>
+                    </div>
+                  </Link>
+                </article>
+              ))}
+            </div>
+          </>
+        ) : (
+          <div className="text-center py-12 bg-white rounded-xl mb-6">
+            <p className="text-gray-500">Tidak ada berita untuk kategori ini.</p>
+          </div>
+        )}
+
+        <section className="border-t-2 border-gray-900 pt-4">
+          <h2 className="font-serif text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+            <span className="w-1 h-6 bg-red-600 rounded-full"></span>
+            BERITA TERKINI
+          </h2>
+          <div className="grid grid-cols-2 gap-4">
+            {latestNews.map((berita) => (
+              <article key={berita.id} className="group flex gap-3 bg-white rounded-lg p-3 shadow-sm hover:shadow-md transition-shadow">
+                <Link href={`/berita/${berita.slug}`} className="flex-shrink-0">
+                  <div className="relative w-20 h-20 rounded-lg overflow-hidden">
+                    <Image
+                      src={berita.gambar}
+                      alt={berita.title}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                </Link>
+                <div className="flex-1 min-w-0">
+                  <Link href={`/berita/${berita.slug}`}>
+                    <span className="text-[10px] font-semibold text-blue-600 uppercase tracking-wide">
+                      {berita.kategori}
+                    </span>
+                    <h3 className="font-serif text-xs font-bold text-gray-900 line-clamp-2 group-hover:text-blue-600 transition-colors mt-1">
+                      {berita.title}
+                    </h3>
+                    <div className="flex items-center text-[10px] text-gray-400 mt-1 gap-2">
+                      <span>{berita.penulis}</span>
+                      <span>•</span>
+                      <span>{berita.tanggal}</span>
+                    </div>
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <footer className="bg-gray-900 text-white py-3 mt-8">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="font-serif text-sm font-bold mb-0">Jurnalisto</h2>
+          <p className="text-[10px] text-gray-400 mb-1">Menerangi Nusa Cendana</p>
+          <p className="text-[10px] text-gray-500">Copyright @ Jurnalisto 2026</p>
+        </div>
+      </footer>
+    </div>
+  );
+}
