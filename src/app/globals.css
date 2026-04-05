@@ -134,6 +134,11 @@
   animation: marquee 60s linear infinite;
 }
 
+.marquee-content-fast {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+
 .marquee-content:hover {
   animation-play-state: paused;
 }

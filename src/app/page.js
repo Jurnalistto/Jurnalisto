@@ -144,7 +144,7 @@ export default function LandingPage() {
                 <button
                   key={`daerah-${daerah.id}-${index}`}
                   onClick={() => handleDaerahClick(daerah)}
-                  className={`mx-1 px-3 py-1.5 flex-shrink-0 rounded text-xs font-medium transition-all ${
+                  className={`mx-1 px-4 py-2 flex-shrink-0 rounded text-sm font-medium transition-all ${
                     selectedDaerah?.id === daerah.id
                       ? 'bg-blue-500 text-white shadow-md'
                       : 'bg-white/10 text-white hover:bg-white/20'
@@ -158,7 +158,7 @@ export default function LandingPage() {
         </div>
         <div className="max-w-7xl mx-auto px-4 py-2">
           <div className="marquee-container">
-            <div className="marquee-content">
+            <div className="marquee-content-fast">
               <button 
                 onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }} 
                 className={`mx-1 px-3 py-1.5 flex-shrink-0 rounded text-xs font-medium transition-all ${
