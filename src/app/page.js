@@ -104,14 +104,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="sticky top-0 z-20 shadow-md border-b border-gray-200 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900">
-        <div className="max-w-7xl mx-auto px-4 py-2">
-          <div className="flex items-center justify-center mb-2">
-            <img 
-              src="/JurnalistoX.png" 
-              alt="Jurnalisto" 
-              className="h-14 sm:h-18 md:h-20 w-auto"
-            />
-          </div>
+        <div className="max-w-7xl mx-auto px-4 pt-2 pb-0">
           <div className="flex justify-end mb-2">
             <form onSubmit={handleSearch}>
               <input
@@ -122,6 +115,15 @@ export default function LandingPage() {
                 className="w-28 sm:w-36 px-2 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
               />
             </form>
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 pb-1">
+          <div className="flex items-center justify-center">
+            <img 
+              src="/JurnalistoX.png" 
+              alt="Jurnalisto" 
+              className="h-12 sm:h-16 md:h-18 w-auto"
+            />
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4">
