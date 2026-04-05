@@ -130,16 +130,6 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 py-1">
           <div className="marquee-container">
             <div className="marquee-content">
-              <button
-                onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }}
-                className={`mx-1 px-4 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
-                  !selectedDaerah && !selectedKategori
-                    ? 'bg-blue-500 text-white shadow-md'
-                    : 'bg-white/10 text-white hover:bg-white/20'
-                }`}
-              >
-                BERANDA UTAMA
-              </button>
               {[...daerahList, ...daerahList].map((daerah, index) => (
                 <button
                   key={`daerah-${daerah.id}-${index}`}
@@ -153,6 +143,16 @@ export default function LandingPage() {
                   {getLabel(daerah.nama).display.toUpperCase()}
                 </button>
               ))}
+              <button
+                onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }}
+                className={`mx-1 px-4 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
+                  !selectedDaerah && !selectedKategori
+                    ? 'bg-blue-500 text-white shadow-md'
+                    : 'bg-white/10 text-white hover:bg-white/20'
+                }`}
+              >
+                BERANDA UTAMA
+              </button>
             </div>
           </div>
         </div>
