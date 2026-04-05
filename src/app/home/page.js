@@ -4,14 +4,14 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllDaerah } from '../../lib/daerah';
-import { getLatestBerita, getFeaturedBerita, getKategori } from '../../data/berita';
+import { getLatestBerita, getFeaturedBerita, getKategoriList } from '../../data/berita';
 
 export default function HomePage() {
   const [selectedDaerah, setSelectedDaerah] = useState(null);
   const daerahList = getAllDaerah();
   const featured = getFeaturedBerita();
   const latest = getLatestBerita();
-  const kategoris = getKategori();
+  const kategoris = getKategoriList();
 
   const utama = featured[0];
   const subFeatured = featured.slice(1, 4);
