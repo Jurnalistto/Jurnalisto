@@ -174,7 +174,7 @@ export default function BeritaDetail({ params, searchParams }) {
 
       <footer className="bg-gray-900 text-white py-6 mt-auto">
         <div className="text-center">
-          <h2 className="font-serif text-lg font-bold mb-1">JURNALISTTO</h2>
+          <h2 className="font-serif text-lg font-bold mb-1">Jurnalisto</h2>
           <p className="text-xs text-gray-400 mb-2">Menerangi Nusa Cendana</p>
           <p className="text-xs text-gray-500">Copyright @ Jurnalisto 2026</p>
         </div>

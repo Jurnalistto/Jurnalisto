@@ -166,25 +166,31 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 py-2">
-          <div className="bg-white/5 py-1 px-0 glow-container">
+          <div className="py-1.5 px-0" style={{background: 'linear-gradient(90deg, rgba(0,0,0,0.3) 0%, transparent 10%, transparent 90%, rgba(0,0,0,0.3) 100%)'}}>
             <div className="marquee-container">
-              <div className="marquee-content">
+              <div className="marquee-content gap-1.5">
                 {[...daerahList, ...daerahList].map((daerah, index) => (
-                  <button
-                    key={`${daerah.id}-${index}`}
-                    onClick={() => handleDaerahClick(daerah)}
-                    className={`mx-0.5 px-2 py-1 rounded-xl text-center transition-all border shadow-md hover:shadow-xl flex-shrink-0 ${
-                      selectedDaerah?.id === daerah.id 
-                        ? 'bg-blue-500 text-white border-blue-400 shadow-blue-300' 
-                        : 'bg-white/10 text-white border-white/20 hover:bg-white/20 hover:border-white/40'
-                    }`}
-                  >
-                    <span className="font-semibold block text-xs leading-tight whitespace-nowrap">{getLabel(daerah.nama).display}</span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
+                 <button
+                   key={`${daerah.id}-${index}`}
+                   onClick={() => handleDaerahClick(daerah)}
+                   className={`mx-1 px-3 py-1 flex-shrink-0 transition-all duration-300 ${
+                     selectedDaerah?.id === daerah.id
+                       ? 'text-white border-b-2 border-amber-400'
+                       : 'text-gray-300 hover:text-white border-b-2 border-transparent hover:border-white/40'
+                   }`}
+                   style={{
+                     fontFamily: 'serif',
+                     letterSpacing: '0.05em',
+                   }}
+                 >
+                   <span className="block text-[11px] font-medium whitespace-nowrap tracking-wider uppercase">
+                     {getLabel(daerah.nama).display}
+                   </span>
+                 </button>
+               ))}
+             </div>
+           </div>
+         </div>
         </div>
       </div>
 

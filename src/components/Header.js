@@ -24,13 +24,7 @@ export default function Header() {
 
   return (
     <div className="bg-white border-b border-blue-300">
-      <div className="text-center py-2">
-        <h1 className="font-serif text-lg md:text-xl font-bold text-blue-600 tracking-tight">
-          JURNALISTTO
-        </h1>
-        <p className="text-xs text-gray-500">Menerangi Nusa Cendana</p>
-      </div>
-      
+
       <div className="px-2 pb-1 space-y-0.5">
         <div className="flex justify-between">
           {row1.map((daerah) => {
