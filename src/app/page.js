@@ -169,7 +169,7 @@ export default function LandingPage() {
               >
                 BERANDA
               </button>
-              {[...kategoris, ...kategoris].map((kat, index) => (
+              {[...kategoris, ...kategoris, ...kategoris, ...kategoris].map((kat, index) => (
                 <button 
                   key={`kategori-${kat}-${index}`}
                   onClick={() => handleKategoriClick(kat)} 
