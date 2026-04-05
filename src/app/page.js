@@ -42,7 +42,7 @@ export default function LandingPage() {
     });
   const featured = getFeaturedBerita();
   const allLatest = getLatestBerita();
-  const kategoris = getKategoriList();
+  const kategoris = [...getKategoriList(), 'Inspirasi'];
 
   const getFilteredNews = () => {
     let result = allLatest;
@@ -103,43 +103,43 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-<div className="sticky top-0 z-20 shadow-md border-b border-gray-200 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900">
+      <div className="sticky top-0 z-20 shadow-md border-b border-gray-200 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 py-3">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-center">
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
-              className="h-12 w-auto"
+              className="h-16 sm:h-20 md:h-24 w-auto mb-2"
             />
-            <div className="flex items-center gap-3">
-              <span className="text-xs text-white font-medium hidden sm:block">
-                {currentDate}
-              </span>
-              <button 
-                onClick={() => {
-                  const searchInput = document.getElementById('mobile-search');
-                  if (searchInput) searchInput.focus();
-                }}
-                className="p-2 bg-white/10 rounded-lg text-white"
-              >
-                🔍
-              </button>
+          </div>
+          <div className="flex justify-end items-center gap-2 mb-2">
+            <div className="text-[10px] sm:text-xs text-white font-medium bg-white/10 px-2 py-1 rounded border border-white/20">
+              {currentDate}
             </div>
           </div>
-          <form onSubmit={handleSearch} className="mt-3">
+          <form onSubmit={handleSearch}>
             <input
-              id="mobile-search"
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Cari berita..."
-              className="w-full px-4 py-2.5 text-sm text-white placeholder-gray-400 bg-white/10 rounded-lg border border-white/20 focus:outline-none focus:border-white/40"
+              className="w-full px-3 py-2 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
             />
           </form>
         </div>
         <div className="max-w-7xl mx-auto px-4 py-2">
           <div className="marquee-container">
             <div className="marquee-content">
+              <button
+                onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }}
+                className={`mx-1 px-4 py-2 flex-shrink-0 rounded text-sm font-medium transition-all ${
+                  !selectedDaerah && !selectedKategori
+                    ? 'bg-blue-500 text-white shadow-md'
+                    : 'bg-white/10 text-white hover:bg-white/20'
+                }`}
+              >
+                BERANDA UTAMA
+              </button>
               {[...daerahList, ...daerahList].map((daerah, index) => (
                 <button
                   key={`daerah-${daerah.id}-${index}`}
@@ -150,7 +150,7 @@ export default function LandingPage() {
                       : 'bg-white/10 text-white hover:bg-white/20'
                   }`}
                 >
-                  {getLabel(daerah.nama).display}
+                  {getLabel(daerah.nama).display.toUpperCase()}
                 </button>
               ))}
             </div>
@@ -164,10 +164,10 @@ export default function LandingPage() {
                 className={`mx-1 px-3 py-1.5 flex-shrink-0 rounded text-xs font-medium transition-all ${
                   !selectedDaerah && !selectedKategori 
                     ? 'bg-blue-500 text-white shadow-md' 
-                    : 'bg-white/10 text-white hover:bg-white/20'
+                    : 'bg-white text-blue-600 hover:bg-blue-50'
                 }`}
               >
-                Beranda
+                BERANDA
               </button>
               {[...kategoris, ...kategoris].map((kat, index) => (
                 <button 
@@ -176,10 +176,10 @@ export default function LandingPage() {
                   className={`mx-1 px-3 py-1.5 flex-shrink-0 rounded text-xs font-medium transition-all ${
                     selectedKategori === kat 
                       ? 'bg-blue-500 text-white shadow-md' 
-                      : 'bg-white/10 text-white hover:bg-white/20'
+                      : 'bg-white text-blue-600 hover:bg-blue-50'
                   }`}
                 >
-                  {kat}
+                  {kat.toUpperCase()}
                 </button>
               ))}
             </div>
