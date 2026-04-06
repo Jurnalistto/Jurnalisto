@@ -139,7 +139,7 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 py-1">
-          <div className="text-center py-1">
+          <div className="text-right py-1">
             <span className="text-xs sm:text-sm text-white font-medium bg-white/10 px-4 py-1 rounded-full border border-white/20">
               {currentDate}
             </span>
