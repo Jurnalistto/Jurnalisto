@@ -134,7 +134,7 @@ export default function LandingPage() {
                 <button
                   key={`daerah-${daerah.id}-${index}`}
                   onClick={() => handleDaerahClick(daerah)}
-                  className={`mx-0.5 px-3 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
+                  className={`mx-0.5 px-3 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all border border-cyan-400/50 ${
                     selectedDaerah?.id === daerah.id
                       ? 'bg-blue-500 text-white shadow-md'
                       : 'bg-white/10 text-white hover:bg-white/20'
@@ -145,7 +145,7 @@ export default function LandingPage() {
               ))}
               <button
                 onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }}
-                className={`mx-0.5 px-3 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
+                className={`mx-0.5 px-3 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all border border-cyan-400/50 ${
                   !selectedDaerah && !selectedKategori
                     ? 'bg-blue-500 text-white shadow-md'
                     : 'bg-white/10 text-white hover:bg-white/20'
@@ -157,7 +157,7 @@ export default function LandingPage() {
                 <button
                   key={`daerah-${daerah.id}-${index}`}
                   onClick={() => handleDaerahClick(daerah)}
-                  className={`mx-0.5 px-3 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all ${
+                  className={`mx-0.5 px-3 py-2 flex-shrink-0 rounded-2xl text-sm font-medium transition-all border border-cyan-400/50 ${
                     selectedDaerah?.id === daerah.id
                       ? 'bg-blue-500 text-white shadow-md'
                       : 'bg-white/10 text-white hover:bg-white/20'
@@ -174,10 +174,10 @@ export default function LandingPage() {
             <div className="marquee-smooth">
               <button 
                 onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }} 
-                className={`mx-1 px-2 py-1 flex-shrink-0 rounded-2xl text-[10px] font-medium transition-all ${
+                className={`mx-1 px-2 py-1 flex-shrink-0 rounded-2xl text-[10px] font-medium transition-all border border-red-500 ${
                   !selectedDaerah && !selectedKategori 
-                    ? 'bg-blue-500 text-white shadow-md' 
-                    : 'bg-white text-blue-600 hover:bg-blue-50'
+                    ? 'bg-red-500 text-white shadow-md' 
+                    : 'bg-white text-red-500 hover:bg-red-50'
                 }`}
               >
                 BERANDA
@@ -186,10 +186,10 @@ export default function LandingPage() {
                 <button 
                   key={`kategori-${kat}-${index}`}
                   onClick={() => handleKategoriClick(kat)} 
-                  className={`mx-1 px-2 py-1 flex-shrink-0 rounded-2xl text-[10px] font-bold transition-all ${
+                  className={`mx-1 px-2 py-1 flex-shrink-0 rounded-2xl text-[10px] font-bold transition-all border border-red-500 ${
                     selectedKategori === kat 
-                      ? 'bg-blue-500 text-white shadow-md' 
-                      : 'bg-white text-blue-600 hover:bg-blue-50'
+                      ? 'bg-red-500 text-white shadow-md' 
+                      : 'bg-white text-red-500 hover:bg-red-50'
                   }`}
                 >
                   {kat}
