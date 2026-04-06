@@ -121,7 +121,7 @@ export default function LandingPage() {
                   className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
                 />
               </form>
-              <div className="text-[10px] sm:text-xs text-white font-medium">
+              <div className="text-[10px] sm:text-xs text-white font-medium whitespace-nowrap">
                 {currentDate}
               </div>
             </div>
