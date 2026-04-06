@@ -229,6 +229,12 @@ export default function LandingPage() {
           </div>
         )}
 
+        <div className="mb-4 p-4 bg-gradient-to-r from-blue-900 via-slate-800 to-blue-900 rounded-xl text-center">
+          <h1 className="text-white font-bold text-lg sm:text-xl md:text-2xl">
+            Terima Kasih Pak Ferdinand Tanjung
+          </h1>
+        </div>
+
         {displayNews.length > 0 ? (
           <>
             {displayNews[0] && (
