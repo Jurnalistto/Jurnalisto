@@ -111,8 +111,8 @@ export default function LandingPage() {
               alt="Jurnalisto" 
               className="h-16 sm:h-20 md:h-24 w-auto"
             />
-            <div className="flex-1 flex justify-end">
-              <form onSubmit={handleSearch} className="w-full max-w-xs mr-2">
+            <div className="flex items-center gap-2">
+              <form onSubmit={handleSearch} className="w-full max-w-xs">
                 <input
                   type="text"
                   value={search}
@@ -121,11 +121,9 @@ export default function LandingPage() {
                   className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
                 />
               </form>
-            </div>
-          </div>
-          <div className="flex justify-end mt-1">
-            <div className="text-[10px] sm:text-xs text-white font-medium bg-white/10 px-2 py-1 rounded border border-white/20">
-              {currentDate}
+              <div className="text-[10px] sm:text-xs text-white font-medium bg-white/10 px-2 py-1 rounded border border-white/20 whitespace-nowrap">
+                {currentDate}
+              </div>
             </div>
           </div>
         </div>
