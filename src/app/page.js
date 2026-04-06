@@ -105,26 +105,21 @@ export default function LandingPage() {
     <div className="min-h-screen bg-gray-50">
       <div className="sticky top-0 z-20 shadow-md border-b border-gray-200 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900">
         <div className="max-w-7xl mx-auto px-4 pt-4 pb-1">
-          <div className="hidden sm:flex items-center justify-between">
+            <div className="hidden sm:flex items-center justify-between">
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
               className="h-16 md:h-24 w-auto"
             />
-            <div className="flex items-center gap-2">
-              <form onSubmit={handleSearch} className="w-full max-w-xs">
-                <input
-                  type="text"
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  placeholder="Cari..."
-                  className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
-                />
-              </form>
-              <div className="text-[10px] sm:text-xs text-white font-medium whitespace-nowrap">
-                {currentDate}
-              </div>
-            </div>
+            <form onSubmit={handleSearch} className="w-full max-w-xs">
+              <input
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Cari berita..."
+                className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
+              />
+            </form>
           </div>
           <div className="flex sm:hidden flex-col items-center">
             <img 
@@ -132,23 +127,23 @@ export default function LandingPage() {
               alt="Jurnalisto" 
               className="h-14 w-auto mb-2"
             />
-            <div className="flex items-center gap-2 w-full">
-              <form onSubmit={handleSearch} className="flex-1">
-                <input
-                  type="text"
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  placeholder="Cari..."
-                  className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
-                />
-              </form>
-              <div className="text-[10px] text-white font-medium whitespace-nowrap">
-                {currentDate}
-              </div>
-            </div>
+            <form onSubmit={handleSearch} className="w-full">
+              <input
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Cari berita..."
+                className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
+              />
+            </form>
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 py-1">
+          <div className="text-center py-1">
+            <span className="text-xs sm:text-sm text-white font-medium bg-white/10 px-4 py-1 rounded-full border border-white/20">
+              {currentDate}
+            </span>
+          </div>
           <div className="marquee-container">
             <div className="marquee-content">
               {daerahList.map((daerah, index) => (
