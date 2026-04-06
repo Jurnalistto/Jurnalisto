@@ -121,7 +121,7 @@ export default function LandingPage() {
                   className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
                 />
               </form>
-              <div className="text-[10px] sm:text-xs text-white font-medium bg-white/10 px-2 py-1 rounded border border-white/20 whitespace-nowrap">
+              <div className="text-[10px] sm:text-xs text-white font-medium">
                 {currentDate}
               </div>
             </div>
@@ -174,10 +174,10 @@ export default function LandingPage() {
             <div className="marquee-smooth">
               <button 
                 onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }} 
-                className={`mx-1 px-2 py-1 flex-shrink-0 rounded-2xl text-[10px] font-medium transition-all border border-red-500 ${
+                className={`mx-1 px-2 py-1 flex-shrink-0 rounded-2xl text-[10px] font-medium transition-all border border-blue-900 ${
                   !selectedDaerah && !selectedKategori 
-                    ? 'bg-red-500 text-white shadow-md' 
-                    : 'bg-white text-red-500 hover:bg-red-50'
+                    ? 'bg-blue-900 text-white shadow-md' 
+                    : 'bg-white text-blue-900 hover:bg-blue-50'
                 }`}
               >
                 BERANDA
@@ -186,10 +186,10 @@ export default function LandingPage() {
                 <button 
                   key={`kategori-${kat}-${index}`}
                   onClick={() => handleKategoriClick(kat)} 
-                  className={`mx-1 px-2 py-1 flex-shrink-0 rounded-2xl text-[10px] font-bold transition-all border border-red-500 ${
+                  className={`mx-1 px-2 py-1 flex-shrink-0 rounded-2xl text-[10px] font-bold transition-all border border-blue-900 ${
                     selectedKategori === kat 
-                      ? 'bg-red-500 text-white shadow-md' 
-                      : 'bg-white text-red-500 hover:bg-red-50'
+                      ? 'bg-blue-900 text-white shadow-md' 
+                      : 'bg-white text-blue-900 hover:bg-blue-50'
                   }`}
                 >
                   {kat}
