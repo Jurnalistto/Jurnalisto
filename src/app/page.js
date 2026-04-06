@@ -109,7 +109,7 @@ export default function LandingPage() {
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
-              className="h-14 sm:h-18 md:h-22 w-auto"
+              className="h-16 sm:h-20 md:h-24 w-auto"
             />
             <div className="flex items-center gap-2">
               <form onSubmit={handleSearch}>
