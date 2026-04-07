@@ -104,13 +104,27 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="sticky top-0 z-20 shadow-md border-b border-gray-200 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900">
-        <div className="max-w-7xl mx-auto px-4 pt-4 pb-1">
-          <div className="hidden sm:flex items-center">
+        <div className="max-w-7xl mx-auto px-4 pt-4">
+          <div className="hidden sm:flex items-center justify-between">
             <img 
               src="/JurnalistoX.png" 
               alt="Jurnalisto" 
-              className="h-16 md:h-24 w-auto mr-4"
+              className="h-16 md:h-24 w-auto"
             />
+            <div className="flex items-center gap-3">
+              <form onSubmit={handleSearch} className="w-full max-w-xs">
+                <input
+                  type="text"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Cari berita..."
+                  className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
+                />
+              </form>
+              <span className="text-xs sm:text-sm text-white font-medium bg-white/10 px-4 py-1.5 rounded-full border border-white/20 whitespace-nowrap">
+                {currentDate}
+              </span>
+            </div>
           </div>
           <div className="flex sm:hidden flex-col items-center">
             <img 
@@ -127,22 +141,6 @@ export default function LandingPage() {
                 className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
               />
             </form>
-          </div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 py-1">
-          <div className="flex items-center justify-end gap-3">
-            <form onSubmit={handleSearch} className="hidden sm:flex flex-1 max-w-xs">
-              <input
-                type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder="Cari berita..."
-                className="w-full px-3 py-1.5 text-xs text-white placeholder-gray-400 bg-white/10 rounded border border-white/20 focus:outline-none focus:border-white/40"
-              />
-            </form>
-            <span className="text-xs sm:text-sm text-white font-medium bg-white/10 px-4 py-1 rounded-full border border-white/20 whitespace-nowrap">
-              {currentDate}
-            </span>
           </div>
         </div>
           <div className="marquee-container">
