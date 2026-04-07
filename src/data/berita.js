@@ -23,6 +23,41 @@ Turut hadir dalam kunjungan tersebut Menteri Agama, Gubernur NTT, serta pejabat 
     featured: true,
   },
   {
+    id: 998,
+    slug: 'tandjung-farm-inspirasi-pertanian-belu',
+    title: 'Tandjung Farm: Percontohan Pertanian Modern yang Menginspirasi Petani Belu',
+    excerpt: 'Usaha pertanian terpadu di Kabupaten Belu menjadi harapan baru dalam mengembangkan potensi agraris daerah perbatasan.',
+    content: `ATAMBUA - Di tengah hamparan sawah dan ladang yang membentang di Kabupaten Belu, Nusa Tenggara Timur, terdapat sebuah gebrakan baru yang mencuri perhatian. Tandjung Farm, sebuah usaha pertanian terpadu yang dikelola secara modern, kini menjadi percontohan bagi petani lokal dalam mengembangkan usahanya.
+
+Berbeda dengan pertanian konvensional yang masih banyak ditemukan di daerah perbatasan Indonesia-Timor Leste ini, Tandjung Farm menerapkan sistem pertanian terpadu yang memadukan beternak sapi, budidaya ikan lele, dan menanam berbagai jenis sayur-sayuran dalam satu area yang saling mendukung.
+
+"Ini adalah jawaban dari Tantangan kami selama ini. Bagaimana memanfaatkan limbah peternakan menjadi pupuk organik untuk tanaman, dan air dari kolam ikan bisa digunakan untuk mengairi sawah," jelas salah satu pengelola Tandjung Farm.
+
+**Inovasi di Tengah Tantangan**
+
+Kabupaten Belu dikenal memiliki tantangan tersendiri dalam sektor pertanian. Curah hujan yang tidak menentu, akses pasar yang terbatas, dan minimnya teknologi menjadi beberapa hambatan yang dihadapi petani setempat.
+
+Namun, Tandjung Farm membuktikan bahwa dengan inovasi dan ketekunan, tantangan tersebut bisa diubah menjadi peluang. Mereka mengembangkan sistem irigasi sederhana yang memanfaatkan sumber air alam dan menerapkan pertanian organik yang ramah lingkungan.
+
+**Dampak Positif untuk Masyarakat**
+
+Keberhasilan Tandjung Farm tidak hanya dirasakan oleh pemiliknya. kini, puluhan petani di sekitar turut belajar dan menerapkan teknik pertanian yang dikembangkan di sana. Beberapa pemuda Belu yang sebelumnya merantau ke kota kini mulai kembali dan tertarik menjadi petani modern.
+
+"Senang sekali melihat generasi muda mulai tertarik dengan pertanian. Ini adalah harapan baru bagi ketahanan pangan Kabupaten Belu," tutur Kepala Desa setempat.
+
+**Harapan untuk Pertanian NTT**
+
+Tandjung Farm menjadi bukti bahwa potensi pertanian di NTT, khususnya Kabupaten Belu, sangat besar jika dikelola dengan baik. Dengan semangat inovasi dan dukungan dari berbagai pihak, pertanian daerah perbatasan ini diharapkan bisa berkembang dan meningkatkan kesejahteraan masyarakat.
+
+Bagi masyarakat Belu yang ingin mengetahui lebih lanjut tentang Tandjung Farm, informasi bisa diikuti melalui media sosial mereka untuk mendapatkan tips dan inspirasi pertanian modern.`,
+    kategori: 'Inspirasi',
+    daerah: 'Belu',
+    penulis: 'Tim Jurnalisto',
+    tanggal: '2026-04-08',
+    gambar: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=400&fit=crop',
+    featured: true,
+  },
+  {
     id: 1,
     slug: 'ekonomi-ntt-2026',
     title: 'Ekonomi NTT Tumbuh Signifikan di Sector Pertanian',
