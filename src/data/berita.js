@@ -1,5 +1,28 @@
 export const berita = [
   {
+    id: 999,
+    slug: 'wakil-presiden-kunjungan-paskah-kupang',
+    title: 'Wakil Presiden Republik Indonesia Kunjungi NTT Perkuat Persatuan di Masa Paskah',
+    excerpt: 'Kunjungan Wakil Presiden dalam rangka mempercepat pembangunan infrastruktur dan mendengarkan aspirasi masyarakat NTT.',
+    content: `KUPANG - Wakil Presiden Republik Indonesia melakukan kunjungan kerja ke Nusa Tenggara Timur pada Senin (07/04/2026), dalam rangkaian peringatan Hari Raya Paskah 2026.
+
+Kunjungan ini merupakan bentuk perhatian pemerintah pusat terhadap masyarakat NTT yang mayoritas beragama Katolik dan Protestan. Wakil Presiden tiba di Bandara El Tari Kupang sekitar pukul 09.00 WITA dan langsung menuju Gereja Katedral Kristus Raja untuk mengikuti ibadah Paskah.
+
+"Semoga kunjungan ini menjadi berkat bagi seluruh masyarakat NTT. Paskah adalah momen kemenangan kasih sayang dan perdamaian," ucap Wakil Presiden dalam keterangannya.
+
+Dalam kunjungannya, Wakil Presiden juga bertemu dengan tokoh agama, pemuda, dan masyarakat adat NTT untuk mendengarkan aspirasi dan keluhan mereka terkait pembangunan daerah.
+
+Gubernur NTT menyambut baik kunjungan tersebut dan menyampaikan apresiasi atas perhatian pemerintah pusat. "Kami sangat berterima kasih atas kunjungan Wakil Presiden yang bertepatan dengan momen Paskah yang penuh berkat ini," kata Gubernur NTT.
+
+Turut hadir dalam kunjungan tersebut Menteri Agama, Gubernur NTT, serta pejabat daerah setempat. Kunjungan ini diharapkan dapat memperkuat hubungan antara pemerintah pusat dan daerah serta mempercepat program pembangunan di NTT.`,
+    kategori: 'Politik',
+    daerah: 'Kota Kupang',
+    penulis: 'Tim Jurnalisto',
+    tanggal: '2026-04-07',
+    gambar: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=400&fit=crop',
+    featured: true,
+  },
+  {
     id: 1,
     slug: 'ekonomi-ntt-2026',
     title: 'Ekonomi NTT Tumbuh Signifikan di Sector Pertanian',
