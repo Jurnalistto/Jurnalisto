@@ -94,7 +94,7 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       <header className="sticky top-0 z-50">
-        <div className="bg-gradient-to-r from-emerald-900 via-green-800 to-emerald-900">
+        <div className="bg-gradient-to-r from-orange-900 via-orange-800 to-orange-900">
           <div className="max-w-7xl mx-auto px-4 py-2">
             <div className="flex items-center justify-between gap-4">
               <img 
@@ -109,7 +109,7 @@ export default function LandingPage() {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     placeholder="Cari berita..."
-                    className="w-full px-4 py-2 pl-10 text-sm bg-white/95 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-emerald-400 focus:outline-none shadow-lg"
+                    className="w-full px-4 py-2 pl-10 text-sm bg-white/95 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-orange-400 focus:outline-none shadow-lg"
                   />
                   <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -128,7 +128,7 @@ export default function LandingPage() {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     placeholder="Cari..."
-                    className="w-full px-3 py-1.5 text-xs bg-white/90 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-emerald-400 focus:outline-none"
+                    className="w-full px-3 py-1.5 text-xs bg-white/90 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-orange-400 focus:outline-none"
                   />
                 </form>
               </div>
@@ -136,7 +136,7 @@ export default function LandingPage() {
           </div>
         </div>
         
-        <div className="bg-emerald-800">
+        <div className="bg-orange-800">
           <div className="max-w-7xl mx-auto px-4">
             <div className="marquee-container py-1.5">
               <div className="marquee-content">
@@ -146,7 +146,7 @@ export default function LandingPage() {
                     onClick={() => handleDaerahClick(daerah)}
                     className={`mx-0.5 px-2.5 py-1 flex-shrink-0 rounded-lg text-[10px] font-semibold transition-all ${
                       selectedDaerah?.id === daerah.id
-                        ? 'bg-emerald-500 text-white shadow-md'
+                        ? 'bg-orange-500 text-white shadow-md'
                         : 'bg-white/15 text-white hover:bg-white/25'
                     }`}
                   >
@@ -157,7 +157,7 @@ export default function LandingPage() {
                   onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }}
                   className={`mx-0.5 px-2.5 py-1 flex-shrink-0 rounded-lg text-[10px] font-semibold transition-all ${
                     !selectedDaerah && !selectedKategori
-                      ? 'bg-emerald-500 text-white shadow-md'
+                      ? 'bg-orange-500 text-white shadow-md'
                       : 'bg-white/15 text-white hover:bg-white/25'
                   }`}
                 >
@@ -169,7 +169,7 @@ export default function LandingPage() {
                     onClick={() => handleDaerahClick(daerah)}
                     className={`mx-0.5 px-2.5 py-1 flex-shrink-0 rounded-lg text-[10px] font-semibold transition-all ${
                       selectedDaerah?.id === daerah.id
-                        ? 'bg-emerald-500 text-white shadow-md'
+                        ? 'bg-orange-500 text-white shadow-md'
                         : 'bg-white/15 text-white hover:bg-white/25'
                     }`}
                   >
@@ -181,7 +181,7 @@ export default function LandingPage() {
           </div>
         </div>
         
-        <div className="bg-emerald-700">
+        <div className="bg-orange-700">
           <div className="max-w-7xl mx-auto px-4 py-1.5">
             <div className="marquee-container">
               <div className="marquee-smooth">
@@ -189,8 +189,8 @@ export default function LandingPage() {
                   onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }} 
                   className={`mx-0.5 px-2 py-0.5 flex-shrink-0 rounded text-[9px] font-bold transition-all ${
                     !selectedDaerah && !selectedKategori 
-                      ? 'bg-white text-emerald-800' 
-                      : 'bg-emerald-900/50 text-white hover:bg-emerald-900'
+                      ? 'bg-white text-orange-800' 
+                      : 'bg-orange-900/50 text-white hover:bg-orange-900'
                   }`}
                 >
                   BERANDA
@@ -201,8 +201,8 @@ export default function LandingPage() {
                     onClick={() => handleKategoriClick(kat)} 
                     className={`mx-0.5 px-2 py-0.5 flex-shrink-0 rounded text-[9px] font-bold transition-all ${
                       selectedKategori === kat 
-                        ? 'bg-white text-emerald-800' 
-                        : 'bg-emerald-900/50 text-white hover:bg-emerald-900'
+                        ? 'bg-white text-orange-800' 
+                        : 'bg-orange-900/50 text-white hover:bg-orange-900'
                     }`}
                   >
                     {kat}
@@ -215,20 +215,20 @@ export default function LandingPage() {
         
         <div className="bg-gray-200 border-b border-gray-300">
           <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between text-xs">
-            <span className="text-emerald-800 font-semibold hidden sm:inline">Jurnalisto - Portal Berita NTT</span>
+            <span className="text-orange-800 font-semibold hidden sm:inline">Jurnalisto - Portal Berita NTT</span>
             <span className="text-gray-600 sm:hidden">{currentDate}</span>
             <div className="flex items-center gap-4">
               <span className="text-gray-500 hidden sm:inline">IKLAN</span>
-              <span className="text-emerald-700 font-medium">{currentDate}</span>
+              <span className="text-orange-700 font-medium">{currentDate}</span>
             </div>
           </div>
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 py-4">
+      <main className="max-w-7xl mx-auto px-4 pt-8 pb-4">
         {(selectedDaerah || selectedKategori) && (
-          <div className="mb-4 p-3 bg-emerald-50 rounded-lg border border-emerald-200">
-            <p className="text-center text-sm text-emerald-700">
+          <div className="mb-4 p-3 bg-orange-50 rounded-lg border border-orange-200">
+            <p className="text-center text-sm text-orange-700">
               Menampilkan: <span className="font-bold">
                 {selectedDaerah?.nama && selectedKategori 
                   ? `${selectedKategori} - ${selectedDaerah.nama}` 
@@ -258,10 +258,10 @@ export default function LandingPage() {
                         </span>
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6">
-                        <span className="px-2 py-0.5 bg-emerald-600 text-white text-[10px] sm:text-xs font-semibold rounded mb-2 inline-block">
+                        <span className="px-2 py-0.5 bg-orange-600 text-white text-[10px] sm:text-xs font-semibold rounded mb-2 inline-block">
                           {displayNews[0].kategori}
                         </span>
-                        <h2 className="font-serif text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
+                        <h2 className="font-serif text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2 group-hover:text-orange-300 transition-colors">
                           {displayNews[0].title}
                         </h2>
                         <p className="text-gray-200 text-xs sm:text-sm line-clamp-2 mb-2 hidden sm:block">
@@ -291,10 +291,10 @@ export default function LandingPage() {
                         />
                       </div>
                       <div className="p-2.5 sm:p-3 flex flex-col justify-center flex-1">
-                        <span className="text-[9px] sm:text-[10px] font-bold text-emerald-700 uppercase tracking-wide">
+                        <span className="text-[9px] sm:text-[10px] font-bold text-orange-700 uppercase tracking-wide">
                           {berita.kategori}
                         </span>
-                        <h3 className="font-serif text-xs sm:text-sm font-bold text-gray-900 line-clamp-2 group-hover:text-emerald-600 transition-colors mt-1">
+                        <h3 className="font-serif text-xs sm:text-sm font-bold text-gray-900 line-clamp-2 group-hover:text-orange-600 transition-colors mt-1">
                           {berita.title}
                         </h3>
                         <p className="text-[9px] sm:text-[10px] text-gray-400 mt-1">
@@ -307,9 +307,9 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <section className="border-t-4 border-emerald-600 pt-4">
+            <section className="border-t-4 border-orange-600 pt-4">
               <h2 className="font-serif text-lg sm:text-xl font-bold text-gray-900 mb-4 flex items-center gap-3">
-                <span className="w-2 h-8 bg-emerald-600 rounded-full"></span>
+                <span className="w-2 h-8 bg-orange-600 rounded-full"></span>
                 BERITA TERKINI
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
@@ -327,10 +327,10 @@ export default function LandingPage() {
                     </Link>
                     <div className="flex-1 min-w-0">
                       <Link href={`/berita/${berita.slug}`}>
-                        <span className="text-[9px] sm:text-[10px] font-bold text-emerald-600 uppercase tracking-wide">
+                        <span className="text-[9px] sm:text-[10px] font-bold text-orange-600 uppercase tracking-wide">
                           {berita.kategori}
                         </span>
-                        <h3 className="font-serif text-xs sm:text-sm font-bold text-gray-900 line-clamp-2 group-hover:text-emerald-600 transition-colors mt-0.5">
+                        <h3 className="font-serif text-xs sm:text-sm font-bold text-gray-900 line-clamp-2 group-hover:text-orange-600 transition-colors mt-0.5">
                           {berita.title}
                         </h3>
                         <div className="flex items-center text-[9px] sm:text-[10px] text-gray-400 mt-1 gap-1 sm:gap-2">
@@ -352,12 +352,9 @@ export default function LandingPage() {
         )}
       </main>
 
-      <footer className="bg-emerald-900 text-white py-6 mt-8">
+      <footer className="bg-orange-900 text-white py-4 mt-8">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <img src="/JurnalistoX.png" alt="Jurnalisto" className="h-10 w-auto mx-auto mb-2 opacity-80" />
-          <h2 className="font-serif text-lg font-bold mb-1">Jurnalisto</h2>
-          <p className="text-emerald-300 text-sm mb-2">Menerangi Nusa Cendana</p>
-          <p className="text-emerald-500 text-xs">Copyright @ Jurnalisto 2026</p>
+          <p className="text-orange-300 text-xs">Copyright @ Jurnalisto 2026</p>
         </div>
       </footer>
     </div>
