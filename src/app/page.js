@@ -104,9 +104,6 @@ export default function LandingPage() {
           </div>
           <div className="max-w-7xl mx-auto px-4 py-2">
             <div className="flex items-center justify-end gap-3">
-              <span className="text-xs text-white/90 font-medium hidden sm:inline">
-                {currentDate}
-              </span>
               <form onSubmit={handleSearch} className="hidden sm:flex">
                 <input
                   type="text"
@@ -116,6 +113,9 @@ export default function LandingPage() {
                   className="w-40 px-3 py-1 text-xs bg-white/90 text-gray-800 rounded-full border-0 focus:ring-1 focus:ring-pink-400 focus:outline-none"
                 />
               </form>
+              <span className="text-xs text-white/90 font-medium">
+                {currentDate}
+              </span>
             </div>
           </div>
           <div className="sm:hidden max-w-7xl mx-auto px-4 pb-2">
