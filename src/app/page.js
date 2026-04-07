@@ -95,44 +95,39 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       <header className="sticky top-0 z-50">
         <div className="bg-gradient-to-r from-slate-900 via-violet-900 to-purple-900">
-          <div className="max-w-7xl mx-auto px-4 py-4">
-            <div className="flex items-center justify-between gap-4">
-              <img 
-                src="/JurnalistoX.png" 
-                alt="Jurnalisto" 
-                className="h-14 sm:h-20 w-auto"
-              />
-              <form onSubmit={handleSearch} className="hidden sm:flex flex-1 max-w-md">
-                <div className="relative w-full">
-                  <input
-                    type="text"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    placeholder="Cari berita..."
-                    className="w-full px-4 py-2 pl-10 text-sm bg-white/95 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-orange-400 focus:outline-none shadow-lg"
-                  />
-                  <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </div>
+          <div className="max-w-7xl mx-auto px-4 pt-4">
+            <img 
+              src="/JurnalistoX.png" 
+              alt="Jurnalisto" 
+              className="h-14 sm:h-20 w-auto"
+            />
+          </div>
+          <div className="max-w-7xl mx-auto px-4 py-2">
+            <div className="flex items-center justify-end gap-3">
+              <span className="text-xs text-white/90 font-medium hidden sm:inline">
+                {currentDate}
+              </span>
+              <form onSubmit={handleSearch} className="hidden sm:flex">
+                <input
+                  type="text"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Cari..."
+                  className="w-40 px-3 py-1 text-xs bg-white/90 text-gray-800 rounded-full border-0 focus:ring-1 focus:ring-pink-400 focus:outline-none"
+                />
               </form>
-              <div className="hidden sm:flex items-center gap-2">
-                <span className="text-xs text-white/90 font-medium">
-                  {currentDate}
-                </span>
-              </div>
-              <div className="sm:hidden flex-1">
-                <form onSubmit={handleSearch} className="w-full">
-                  <input
-                    type="text"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    placeholder="Cari..."
-                    className="w-full px-3 py-1.5 text-xs bg-white/90 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-orange-400 focus:outline-none"
-                  />
-                </form>
-              </div>
             </div>
+          </div>
+          <div className="sm:hidden max-w-7xl mx-auto px-4 pb-2">
+            <form onSubmit={handleSearch} className="w-full">
+              <input
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Cari..."
+                className="w-full px-3 py-1.5 text-xs bg-white/90 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-pink-400 focus:outline-none"
+              />
+            </form>
           </div>
         </div>
         
