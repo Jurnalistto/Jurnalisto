@@ -25,9 +25,9 @@ Turut hadir dalam kunjungan tersebut Menteri Agama, Gubernur NTT, serta pejabat 
   {
     id: 998,
     slug: 'michael-tandjung-ceo-tandjung-farm-belu',
-    title: 'Michael Tandjung, SE: Wirausahawan dan Inovator Pertanian Terpadu dari Kabupaten Belu',
+    title: 'Michael Tandjung: Entrepreneur dan Inovator Pertanian Terpadu dari Kabupaten Belu',
     excerpt: 'CEO Tandjung Farm sukses mengubah lahan tidur 5 hektar menjadi pertanian modern terpadu yang menginspirasi petani NTT.',
-    content: `ATAMBUA - Di tengah semangat pembangunan sektor pertanian Nusa Tenggara Timur, muncul sosok inspiratif yang berhasil mengubah paradigma bertani di daerah perbatasan. Michael Tandjung, SE, seorang entrepreneur, inovator, dan motivator kelahiran Kabupaten Belu, membuktikan bahwa dengan visi dan ketekunan, pertanian modern bisa dikembangkan bahkan di lahan yang dianggap tidak produktif.
+    content: `ATAMBUA - Di tengah semangat pembangunan sektor pertanian Nusa Tenggara Timur, muncul sosok inspiratif yang berhasil mengubah paradigma bertani di daerah perbatasan. Michael Tandjung, seorang entrepreneur, inovator, dan motivator kelahiran Kabupaten Belu, membuktikan bahwa dengan visi dan ketekunan, pertanian modern bisa dikembangkan bahkan di lahan yang dianggap tidak produktif.
 
 Tandjung Farm, perusahaan pertanian terpadu yang didirikannya, kini menjadi percontohan nasional bagi pengembangan pertanian terintegrasi di NTT. Berlokasi strategis di Desa Taekto, hanya 15 menit perjalanan dari pusat Kota Atambua, pertanian seluas 5 hektar ini telah bertransformasi dari lahan tidur menjadi kawasan agraris yang produktif dan berkelanjutan.
 
