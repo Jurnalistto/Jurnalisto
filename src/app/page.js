@@ -95,13 +95,6 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       <header className="sticky top-0 z-50">
         <div className="bg-gradient-to-r from-slate-900 via-violet-900 to-purple-900">
-          <div className="max-w-7xl mx-auto px-4 pt-4">
-            <img 
-              src="/JurnalistoX.png" 
-              alt="Jurnalisto" 
-              className="h-14 sm:h-20 w-auto"
-            />
-          </div>
           <div className="max-w-7xl mx-auto px-4 py-2">
             <div className="flex items-center justify-end gap-3">
               <form onSubmit={handleSearch} className="hidden sm:flex">
@@ -132,7 +125,14 @@ export default function LandingPage() {
         </div>
         
         <div className="bg-violet-800">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-7xl mx-auto px-4 pt-3">
+            <img 
+              src="/JurnalistoX.png" 
+              alt="Jurnalisto" 
+              className="h-12 sm:h-16 w-auto mx-auto"
+            />
+          </div>
+          <div className="max-w-7xl mx-auto px-4 pb-2">
             <div className="marquee-container py-1.5">
               <div className="marquee-content">
                 {daerahList.map((daerah, index) => (
@@ -152,7 +152,7 @@ export default function LandingPage() {
                   onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }}
                   className={`mx-0.5 px-2.5 py-1 flex-shrink-0 rounded-lg text-[10px] font-semibold transition-all ${
                     !selectedDaerah && !selectedKategori
-                      ? 'bg-violet-500 text-white shadow-md'
+                      ? 'bg-red-600 text-white shadow-md'
                       : 'bg-white/15 text-white hover:bg-white/25'
                   }`}
                 >
@@ -184,7 +184,7 @@ export default function LandingPage() {
                   onClick={() => { setSelectedDaerah(null); setSelectedKategori(null); }} 
                   className={`mx-0.5 px-2 py-0.5 flex-shrink-0 rounded text-[9px] font-bold transition-all ${
                     !selectedDaerah && !selectedKategori 
-                      ? 'bg-white text-purple-800' 
+                      ? 'bg-red-600 text-white' 
                       : 'bg-purple-900/50 text-white hover:bg-purple-900'
                   }`}
                 >
