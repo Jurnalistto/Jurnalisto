@@ -24,47 +24,45 @@ Turut hadir dalam kunjungan tersebut Menteri Agama, Gubernur NTT, serta pejabat 
   },
   {
     id: 998,
-    slug: 'tandjung-farm-inspirasi-pertanian-belu',
-    title: 'Michael Tandjung: Entrepreneur Sukses dari Belu yang Membangun Pertanian Terpadu di Atas Lahan 5 Hektar',
-    excerpt: 'Tandjung Farm menjadi percontohan pertanian modern dengan konsep terpadu yang menginspirasi petani NTT.',
-    content: `ATAMBUA - Michael Tandjung, SE, seorang entrepreneur, inovator, dan motivator asal Nusa Tenggara Timur, membuktikan bahwa tanah Belu bisa menghasilkan kesejahteraan. Dengan ketekunan dan kesabaran, ia berhasil membangun Tandjung Farm, sebuah sistem pertanian terpadu yang kini menjadi kebanggaan Kabupaten Belu.
+    slug: 'michael-tandjung-ceo-tandjung-farm-belu',
+    title: 'Michael Tandjung, SE: Wirausahawan dan Inovator Pertanian Terpadu dari Kabupaten Belu',
+    excerpt: 'CEO Tandjung Farm sukses mengubah lahan tidur 5 hektar menjadi pertanian modern terpadu yang menginspirasi petani NTT.',
+    content: `ATAMBUA - Di tengah semangat pembangunan sektor pertanian Nusa Tenggara Timur, muncul sosok inspiratif yang berhasil mengubah paradigma bertani di daerah perbatasan. Michael Tandjung, SE, seorang entrepreneur, inovator, dan motivator kelahiran Kabupaten Belu, membuktikan bahwa dengan visi dan ketekunan, pertanian modern bisa dikembangkan bahkan di lahan yang dianggap tidak produktif.
 
-Berlokasi di Desa Taekto, hanya 15 menit dari pusat Kota Atambua, Tandjung Farm berdiri di atas lahan seluas 5 hektar yang dulunya merupakan lahan tidur. Kini, hamparan sawah dan kebun yang produktif menjadi saksi keberhasilan konsep pertanian terpadu yang diterapkan Michael.
+Tandjung Farm, perusahaan pertanian terpadu yang didirikannya, kini menjadi percontohan nasional bagi pengembangan pertanian terintegrasi di NTT. Berlokasi strategis di Desa Taekto, hanya 15 menit perjalanan dari pusat Kota Atambua, pertanian seluas 5 hektar ini telah bertransformasi dari lahan tidur menjadi kawasan agraris yang produktif dan berkelanjutan.
 
-**KONSEP PERTANIAN TERPADU**
+**VISI PERTANIAN TERPADU**
 
-Tandjung Farm menerapkan sistem pertanian terpadu yang memadukan berbagai sektor dalam satu area yang saling mendukung. Di sini terdapat:
+Mengusung konsep pertanian terpadu (integrated farming), Tandjung Farm memadukan berbagai sektor dalam satu ekosistem yang saling mendukung. Portfolio usaha meliputi peternakan telur puyuh dengan produksi harian yang stabil, pembudidayaan ayam potong untuk pasokan daging ayam lokal, pengelolaan kambing dengan teknik pemeliharaan modern, kultivasi berbagai jenis buah-buahan tropis dan sayuran organik, serta pengembangan taman doa sebagai ruang refleksi spiritual.
 
-- Peternakan telur puyuh dengan produksi harian yang kontinu
-- Peternakan ayam potong untuk memenuhi kebutuhan daging ayam lokal
-- Pembudidayaan kambing dengan metode pemeliharaan modern
-- Berbagai jenis buah-buahan tropis dan sayuran organik
-- Taman Doa sebagai ruang refleksi dan ketenangan
+"Ini adalah perwujudan dari mimpi saya untuk membawa perubahan nyata bagi pertanian NTT. Dengan sistem terpadu, tidak ada sumber daya yang terbuang sia-sia," jelas Michael Tandjung dalam wawancara eksklusif.
 
-**MOTTO HIDUP YANG MEMotivasi**
+**FILSAFAT HIDUP**
 
-Dengan moto hidup "Segala Sesuatu yang kamu kehendaki supaya orang perbuat kepadamu, perulah demikian juga kepada mereka," Michael tidak hanya fokus pada keuntungan bisnis semata. Ia membangun pertanian ini dengan semangat kebersamaan dan kepedulian terhadap sesama.
+Motto yang dipegang teguh Michael adalah Firman Tuhan: "Segala sesuatu yang kamu kehendaki supaya orang perbuat kepadamu, perbuatlah demikian juga kepada mereka." Prinsip ini tercermin dalam setiap aspek operasional Tandjung Farm—tidak hanya mengejar profit, tetapi juga memberdayakan komunitas sekitar dan menjaga kelestarian lingkungan.
 
-"Pertanian bukan hanya tentang menghasilkan makanan, tapi juga tentang membangun komunitas yang saling mendukung dan memberkati satu sama lain," jelas Michael Tandjung.
+**PROSES TRANSFORMASI**
 
-**Proses yang Penuh Ketekunan**
+Jalan menuju keberhasilan bukanlah tanpa rintangan. Dibutuhkan kesabaran dan kerja keras untuk membersihkan lahan, membangun infrastruktur, dan mengembangkan jaringan bisnis. Namun, dengan keyakinan dan konsistensi, Michael berhasil melewati setiap tantangan.
 
-Awal perjalanan Tandjung Farm bukanlah hal yang mudah. Dibutuhkan waktu, tenaga, dan kesabaran untuk mengubah lahan tidur menjadi pertanian yang produktif. Namun, dengan keyakinan dan kerja keras, Michael berhasil melewati berbagai tantangan.
+Sistem sirkulasi tertutup yang diterapkan memastikan efisiensi maksimal—limbah peternakan diolah menjadi pupuk organik untuk menyuburkan tanaman, sementara air dari kolam ikan digunakan untuk mengairi sawah dan kebun sayuran. Pendekatan ini tidak hanya ramah lingkungan tetapi juga ekonomis.
 
-Sistem循环 pertanian yang diterapkan di sini memastikan tidak ada limbah yang terbuang. Limbah peternakan diolah menjadi pupuk organik untuk tanaman, sementara air dari kolam ikan digunakan untuk mengairi sawah dan kebun sayuran.
+**DAMPAK SOSIAL**
 
-**Inspirasi untuk Petani NTT**
+Keberhasilan Tandjung Farm telah memberikan dampak positif bagi masyarakat Belu. Puluhan petani lokal mendapat edukasi dan pendampingan untuk menerapkan teknik pertanian modern. Lebih dari itu, generasi muda yang sebelumnya merantau ke kota kini mulai melirik prospek pertanian sebagai karier yang menjanjikan.
 
-Keberhasilan Tandjung Farm telah menginspirasi banyak petani muda di Belu dan sekitar. Beberapa di antara mereka bahkan mulai menerapkan sistem serupa di lahan mereka masing-masing.
+**HARAPAN UNTUK PERTANIAN NTT**
 
-Bagi masyarakat yang ingin mengetahui lebih lanjut tentang Tandjung Farm, dapat mengikuti akun TikTok resmi mereka untuk mendapatkan inspirasi dan tips pertanian modern.
+Tandjung Farm menjadi bukti nyata bahwa potensi agraris NTT sangat besar jika dikelola dengan pendekatan inovatif dan berkelanjutan. Michael Tandjung mengharapkan更多 petani muda turut bergabung dalam gerakan pertanian modern untuk mendukung ketahanan pangan daerah.
 
-Tandjung Farm membuktikan bahwa dengan niat baik, ketekunan, dan inovasi, tanah NTT bisa menjadi ladang berkah bagi kesejahteraan masyarakat.`,
+Untuk informasi lebih lanjut dan inspirasi pertanian, masyarakat dapat mengikuti akun TikTok resmi Tandjung Farm: @michaeltandjung.
+
+Dengan semangat entrepreneurship dan kepedulian terhadap sesama, Michael Tandjung membuktikan bahwa tanah NTT—khususnya Kabupaten Belu—dapat menjadi ladang berkah bagi kesejahteraan masyarakat.`,
     kategori: 'Inspirasi',
     daerah: 'Belu',
     penulis: 'Tim Jurnalisto',
     tanggal: '2026-04-08',
-    gambar: 'https://images.unsplash.com/photo-1595855759920-86582396756a?w=800&h=400&fit=crop',
+    gambar: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=400&fit=crop',
     featured: true,
   },
   {
