@@ -95,39 +95,39 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       <header className="sticky top-0 z-50">
         <div className="bg-gradient-to-r from-slate-900 via-violet-900 to-purple-900">
-          <div className="max-w-7xl mx-auto px-4 pt-6 pb-3">
-            <div className="flex flex-col items-center">
-              <img 
-                src="/JurnalistoX.png" 
-                alt="Jurnalisto" 
-                className="h-16 sm:h-24 w-auto mb-3"
-              />
-              <div className="flex items-center justify-between gap-3 w-full max-w-2xl mx-auto">
-                <form onSubmit={handleSearch} className="hidden sm:flex flex-1">
-                  <input
-                    type="text"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
-                    placeholder="Cari berita..."
-                    className="w-full px-4 py-2 text-sm bg-white/95 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-pink-400 focus:outline-none shadow-lg"
-                  />
-                </form>
-                <span className="text-xs sm:text-sm text-white/90 font-medium whitespace-nowrap">
-                  {currentDate}
-                </span>
-              </div>
-            </div>
+          <div className="max-w-7xl mx-auto px-4 pt-6">
+            <img 
+              src="/JurnalistoX.png" 
+              alt="Jurnalisto" 
+              className="h-16 sm:h-24 w-auto mx-auto mb-3"
+            />
           </div>
-          <div className="sm:hidden max-w-7xl mx-auto px-4 pb-2">
-            <form onSubmit={handleSearch} className="w-full">
-              <input
-                type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder="Cari berita..."
-                className="w-full px-4 py-2 text-sm bg-white/95 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-pink-400 focus:outline-none shadow-lg"
-              />
-            </form>
+          <div className="max-w-7xl mx-auto px-4 pb-3">
+            <div className="flex items-center justify-center gap-4">
+              <form onSubmit={handleSearch} className="hidden sm:flex flex-1 max-w-xl">
+                <input
+                  type="text"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Cari berita..."
+                  className="w-full px-4 py-2 text-sm bg-white/95 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-pink-400 focus:outline-none shadow-lg"
+                />
+              </form>
+              <span className="text-xs sm:text-sm text-white/90 font-medium whitespace-nowrap">
+                {currentDate}
+              </span>
+            </div>
+            <div className="sm:hidden mt-2">
+              <form onSubmit={handleSearch} className="w-full">
+                <input
+                  type="text"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  placeholder="Cari berita..."
+                  className="w-full px-4 py-2 text-sm bg-white/95 text-gray-800 rounded-full border-0 focus:ring-2 focus:ring-pink-400 focus:outline-none shadow-lg"
+                />
+              </form>
+            </div>
           </div>
         </div>
         
