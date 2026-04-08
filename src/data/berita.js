@@ -62,7 +62,7 @@ Dengan semangat entrepreneurship dan kepedulian terhadap sesama, Michael Tandjun
     daerah: 'Belu',
     penulis: 'Tim Jurnalisto',
     tanggal: '2026-04-08',
-    gambar: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=400&fit=crop',
+    gambar: '/Tandjung-Farm.png',
     featured: true,
   },
   {
