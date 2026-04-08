@@ -103,8 +103,9 @@ export default function LandingPage() {
             />
           </div>
           <div className="max-w-7xl mx-auto px-4 pb-3">
-            <div className="flex items-center justify-center gap-4">
-              <form onSubmit={handleSearch} className="hidden sm:flex flex-1 max-w-xl">
+            <div className="flex items-center justify-between">
+              <div className="flex-1"></div>
+              <form onSubmit={handleSearch} className="hidden sm:block flex-1 max-w-xl mx-4">
                 <input
                   type="text"
                   value={search}

@@ -25,39 +25,39 @@ Turut hadir dalam kunjungan tersebut Menteri Agama, Gubernur NTT, serta pejabat 
   {
     id: 998,
     slug: 'michael-tandjung-ceo-tandjung-farm-belu',
-    title: 'Michael Tandjung: Entrepreneur dan Inovator Pertanian Terpadu dari Kabupaten Belu',
+    title: 'Michael Tandjung, S.E. CEO Tandjung Farm: Entrepreneur dan Inovator Pertanian Terpadu dari Kabupaten Belu',
     excerpt: 'CEO Tandjung Farm sukses mengubah lahan tidur 5 hektar menjadi pertanian modern terpadu yang menginspirasi petani NTT.',
-    content: `ATAMBUA - Di tengah semangat pembangunan sektor pertanian Nusa Tenggara Timur, muncul sosok inspiratif yang berhasil mengubah paradigma bertani di daerah perbatasan. Michael Tandjung, seorang entrepreneur, inovator, dan motivator kelahiran Kabupaten Belu, membuktikan bahwa dengan visi dan ketekunan, pertanian modern bisa dikembangkan bahkan di lahan yang dianggap tidak produktif.
+    content: `ATAMBUA - Di tengah semangat pembangunan sektor pertanian Nusa Tenggara Timur, muncul sosok inspiratif yang berhasil mengubah paradigma bertani di daerah perbatasan. Michael Tandjung, S.E., CEO Tandjung Farm, adalah seorang entrepreneur, inovator, dan motivator kelahiran Kabupaten Belu yang membuktikan bahwa dengan visi dan ketekunan, pertanian modern bisa dikembangkan bahkan di lahan yang dianggap tidak produktif.
 
 Tandjung Farm, perusahaan pertanian terpadu yang didirikannya, kini menjadi percontohan nasional bagi pengembangan pertanian terintegrasi di NTT. Berlokasi strategis di Desa Taekto, hanya 15 menit perjalanan dari pusat Kota Atambua, pertanian seluas 5 hektar ini telah bertransformasi dari lahan tidur menjadi kawasan agraris yang produktif dan berkelanjutan.
 
-**VISI PERTANIAN TERPADU**
+VISI PERTANIAN TERPADU
 
 Mengusung konsep pertanian terpadu (integrated farming), Tandjung Farm memadukan berbagai sektor dalam satu ekosistem yang saling mendukung. Portfolio usaha meliputi peternakan telur puyuh dengan produksi harian yang stabil, pembudidayaan ayam potong untuk pasokan daging ayam lokal, pengelolaan kambing dengan teknik pemeliharaan modern, kultivasi berbagai jenis buah-buahan tropis dan sayuran organik, serta pengembangan taman doa sebagai ruang refleksi spiritual.
 
 "Ini adalah perwujudan dari mimpi saya untuk membawa perubahan nyata bagi pertanian NTT. Dengan sistem terpadu, tidak ada sumber daya yang terbuang sia-sia," jelas Michael Tandjung dalam wawancara eksklusif.
 
-**FILSAFAT HIDUP**
+FILSAFAT HIDUP
 
-Motto yang dipegang teguh Michael adalah Firman Tuhan: "Segala sesuatu yang kamu kehendaki supaya orang perbuat kepadamu, perbuatlah demikian juga kepada mereka." Prinsip ini tercermin dalam setiap aspek operasional Tandjung Farm—tidak hanya mengejar profit, tetapi juga memberdayakan komunitas sekitar dan menjaga kelestarian lingkungan.
+Motto yang dipegang teguh Michael adalah Firman Tuhan: "Segala sesuatu yang kamu kehendaki supaya orang perbuat kepadamu, perbuatlah demikian juga kepada mereka." Prinsip ini tercermin dalam setiap aspek operasional Tandjung Farm, tidak hanya mengejar profit, tetapi juga memberdayakan komunitas sekitar dan menjaga kelestarian lingkungan.
 
-**PROSES TRANSFORMASI**
+PROSES TRANSFORMASI
 
 Jalan menuju keberhasilan bukanlah tanpa rintangan. Dibutuhkan kesabaran dan kerja keras untuk membersihkan lahan, membangun infrastruktur, dan mengembangkan jaringan bisnis. Namun, dengan keyakinan dan konsistensi, Michael berhasil melewati setiap tantangan.
 
-Sistem sirkulasi tertutup yang diterapkan memastikan efisiensi maksimal—limbah peternakan diolah menjadi pupuk organik untuk menyuburkan tanaman, sementara air dari kolam ikan digunakan untuk mengairi sawah dan kebun sayuran. Pendekatan ini tidak hanya ramah lingkungan tetapi juga ekonomis.
+Sistem sirkulasi tertutup yang diterapkan memastikan efisiensi maksimal, limbah peternakan diolah menjadi pupuk organik untuk menyuburkan tanaman, sementara air dari kolam ikan digunakan untuk mengairi sawah dan kebun sayuran. Pendekatan ini tidak hanya ramah lingkungan tetapi juga ekonomis.
 
-**DAMPAK SOSIAL**
+DAMPAK SOSIAL
 
 Keberhasilan Tandjung Farm telah memberikan dampak positif bagi masyarakat Belu. Puluhan petani lokal mendapat edukasi dan pendampingan untuk menerapkan teknik pertanian modern. Lebih dari itu, generasi muda yang sebelumnya merantau ke kota kini mulai melirik prospek pertanian sebagai karier yang menjanjikan.
 
-**HARAPAN UNTUK PERTANIAN NTT**
+HARAPAN UNTUK PERTANIAN NTT
 
-Tandjung Farm menjadi bukti nyata bahwa potensi agraris NTT sangat besar jika dikelola dengan pendekatan inovatif dan berkelanjutan. Michael Tandjung mengharapkan更多 petani muda turut bergabung dalam gerakan pertanian modern untuk mendukung ketahanan pangan daerah.
+Tandjung Farm menjadi bukti nyata bahwa potensi agraris NTT sangat besar jika dikelola dengan pendekatan inovatif dan berkelanjutan. Michael Tandjung berharap lebih banyak petani muda turut bergabung dalam gerakan pertanian modern untuk mendukung ketahanan pangan daerah.
 
 Untuk informasi lebih lanjut dan inspirasi pertanian, masyarakat dapat mengikuti akun TikTok resmi Tandjung Farm: @michaeltandjung.
 
-Dengan semangat entrepreneurship dan kepedulian terhadap sesama, Michael Tandjung membuktikan bahwa tanah NTT—khususnya Kabupaten Belu—dapat menjadi ladang berkah bagi kesejahteraan masyarakat.`,
+Dengan semangat entrepreneurship dan kepedulian terhadap sesama, Michael Tandjung membuktikan bahwa tanah NTT, khususnya Kabupaten Belu, dapat menjadi ladang berkah bagi kesejahteraan masyarakat.`,
     kategori: 'Inspirasi',
     daerah: 'Belu',
     penulis: 'Tim Jurnalisto',
@@ -72,7 +72,7 @@ Dengan semangat entrepreneurship dan kepedulian terhadap sesama, Michael Tandjun
     excerpt: 'Pertumbuhan ekonomi Nusa Tenggara Timur mencapai 4,8 persen pada 2026, didorong sector pertanian dan pariwisata.',
     content: `Pertumbuhan ekonomi Nusa Tenggara Timur pada tahun 2026 menunjukkan trend positif dengan pertumbuhan 4,8 persen. Sektor pertanian menjadi penyumbang utama dengan kontribusi 35 persen terhadap PDB daerah.
 
-Gubernur NTT mengungkapkan bahwa program intensifikasi pertanian telah berhasil meningkatkan produksi padi dan palawija. Selain itu, sektor pariwisata也开始 pulih dengan meningkatnya jumlah wisatawan domestik maupun mancanegara.
+Gubernur NTT mengungkapkan bahwa program intensifikasi pertanian telah berhasil meningkatkan produksi padi dan palawija. Selain itu, sektor pariwisatajuga pulih dengan meningkatnya jumlah wisatawan domestik maupun mancanegara.
 
 "Daya tarik wisata alam dan budaya NTT semakin dikenal luas. Kami targetkan kunjungan wisata meningkat 20 persen tahun ini," kata Gubernur.`,
     kategori: 'Ekonomi',
@@ -89,7 +89,7 @@ Gubernur NTT mengungkapkan bahwa program intensifikasi pertanian telah berhasil 
     excerpt: 'Komisi Pemilihan Umum Kota Kupang mulai siapkan infrastruktur untuk pemilhan kepala daerah.',
     content: `KPU Kota Kupang telah memulai persiapan untuk pemilhan kepala daerah yang akan diselenggarakan pada Oktober 2026. Sedikitnya 8 pasangan calon diperkirakan akan mendaftar.
 
-Panitia Pemilihan Kecamatan telah dibentuk di seluruh 6 kecamatan. Sosialisasi kepada masyarakat也开始 dilakukan sejak bulan lalu.
+Panitia Pemilihan Kecamatan telah dibentuk di seluruh 6 kecamatan. Sosialisasi kepada masyarakatjuga dilakukan sejak bulan lalu.
 
 "Kami pastikan semua proses pemilhan akan berlangsung jujur, adil, dan transparan," tegas Ketua KPU Kota Kupang.`,
     kategori: 'Politik',
@@ -820,7 +820,7 @@ Pengunjung dapat menikmati keindahan arsitektur benteng sambil belajar sejarah l
     excerpt: 'Generasi muda Ende memadukan musik tradisional dengan genre kontemporer.',
     content: `Musisi muda Ende berhasil mengembangkan musik tifa tradisional dengan aransemen modern yang memukau. Perpaduan antara musik tifa dan pop rock berhasil menarik perhatian generasi muda.
 
-Festival Tifa yang diadakan setiap tahun terus meningkat partisipasi dari berbagai kalangan. Para musisi Ende也开始 mengEXPORT karya mereka ke Seluruh Indonesia.`,
+Festival Tifa yang diadakan setiap tahun terus meningkat partisipasi dari berbagai kalangan. Para musisi Endejuga mengEXPORT karya mereka ke Seluruh Indonesia.`,
     kategori: 'Budaya',
     daerah: 'Kabupaten Ende',
     penulis: 'Theresia Boo',
@@ -1000,7 +1000,7 @@ Tim medis yang dipimpin dr. Stev Kase telah disiapkan dengan peralatan canggih. 
     excerpt: 'Generasi muda Flores Timur memadukan musik tradisional dengan genre kontemporer.',
     content: `Musisi muda Flores Timur berhasil mengembangkan musik tifa tradisional dengan aransemen modern yang memukau. Perpaduan antara musik tifa dan pop rock berhasil menarik perhatian generasi muda.
 
-Festival Tifa yang diadakan setiap tahun terus meningkat partisipasi dari berbagai kalangan. Para musisi Flores Timur也开始 mengekspor karya mereka ke Seluruh Indonesia.`,
+Festival Tifa yang diadakan setiap tahun terus meningkat partisipasi dari berbagai kalangan. Para musisi Flores Timurjuga mengekspor karya mereka ke Seluruh Indonesia.`,
     kategori: 'Musik',
     daerah: 'Kabupaten Flores Timur',
     penulis: 'Theresia Boo',
@@ -1885,7 +1885,7 @@ Peternak kuda Sumba Barat memperoleh keuntungan besar dari ekspor ini. Populasi 
     excerpt: 'Keindahan savana dengan kuda liar jadi daya tarik utama.',
     content: `Savana Wainulate di Sumba Barat terpilih menjadi destinasi wisata baru dengan keindahan savana dan kuda liar yang berlarian. Pemandangan ini menjadi sangat ikonik.
 
-Wisatawan dapat menikmati keindahan savana sambil menaiki kuda Sandel. Fasilitas homestay masyarakat也开始 dibangun untuk wisatawan.`,
+Wisatawan dapat menikmati keindahan savana sambil menaiki kuda Sandel. Fasilitas homestay masyarakatjuga dibangun untuk wisatawan.`,
     kategori: 'Pari Wisata',
     daerah: 'Kabupaten Sumba Barat',
     penulis: 'Susan Nggongo',
@@ -2830,7 +2830,7 @@ Target pengiriman 50 ton per bulan ke hotel-hotel sudah dapat dipenuhi. Nelayan 
     excerpt: 'Keindahan pantai pasir putih tarik perhatian wisatawan.',
     content: `Pulau Kanawa di Manggarai Barat dikembangkan menjadi destinasi wisata premium dengan keindahan pantai pasir putih dan laut biru yang jernih.
 
-Wisatawan dapat menikmati snorkeling, diving, dan matahari terbenam yang indah. Fasilitas glamping也开始 dibangun.`,
+Wisatawan dapat menikmati snorkeling, diving, dan matahari terbenam yang indah. Fasilitas glampingjuga dibangun.`,
     kategori: 'Pari Wisata',
     daerah: 'Kabupaten Manggarai Barat',
     penulis: 'Susan Nggongo',
